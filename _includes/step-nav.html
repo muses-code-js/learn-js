@@ -1,0 +1,26 @@
+{% assign steps = site.steps | sort: "number" %}
+
+<div class="step-nav">
+  <ul class="main">
+    <li class="{% if page.url == '/' }} %}active{% endif %}"><a  href="{{ '/' | relative_url }}">Home</a></li>
+  </ul>
+
+  <h3>Workshop Steps</h3>
+  <ul>
+  {% for step in steps %}
+      <li class='{% if page.number == step.number %}active{% endif %}'>
+        <a href="{{ step.url | relative_url }}">
+          {% if step.number != "start" %}{{step.number}} - {% endif %}{{ step.title | escape }}
+        </a>
+      </li>
+  {% endfor %}
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
