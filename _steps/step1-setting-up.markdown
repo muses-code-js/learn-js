@@ -6,7 +6,7 @@ permalink: step1/
 ---
 
 
-At lot of beginning workshops for Javascript start you with the very basics and only start doing the fun stuff (like using the DOM) at the end.
+At lot of beginning workshops for Javascript start you with the very basics and only start doing the fun stuff (like messing around with page) at the end.
 
 That's kind of boring, so we want to jump right in with the fun stuff.
 
