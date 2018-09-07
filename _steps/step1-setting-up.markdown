@@ -47,6 +47,8 @@ You should see your button.
 
 Now click on the button and you will see the text 'You clicked the button!' added to the page.
 
+![Your very first Javascript](../assets/step-1a.png){:title="Your very first Javascript" class="img-responsive"}
+
 [INSERT BRAIN EXPLODING GIF]
 
 So what just happened here?

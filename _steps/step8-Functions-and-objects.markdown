@@ -21,7 +21,7 @@ Consider this code:
 
 ```javascript
 function foxSound(){
-	return "yow-wow-wow-wow";
+  return "yow-wow-wow-wow";
 }
 var foxSays = foxSound;
 console.log( foxSays() );
@@ -41,7 +41,7 @@ We can also create a function as a **function expression**
 
 ```javascript
 var foxSays = function(){
-	return "yow-wow-wow-wow";
+  return "yow-wow-wow-wow";
 }
 ```
 
@@ -55,7 +55,7 @@ Function expressions mean you can do this:
 
 ```javascript
 document.getElementById("buttonA").onclick = function(){
-	document.getElementById("message").innerText = "You clicked the button!"!
+  document.getElementById("message").innerText = "You clicked the button!"!
 };
 ```
 
@@ -71,9 +71,9 @@ Here’s a silly example showing an object with functions assigned to it’s pro
 
 ```javascript
 var animalSounds = {
-	cat: meow,
-	dog: woof,
-	duck: function(){ console.log("quack!"); }
+  cat: meow,
+  dog: woof,
+  duck: function(){ console.log("quack!"); }
 }
 
 function meow() { console.log("meow!"); }

@@ -40,7 +40,8 @@ First lets create a page with our HTML elements:
 
 This gives us a box to type a new name into, a button to click to add the name, and two divs: one to display the list of names and the other to show us the number of names.
 
-[INSERT SCREENSHOT]
+![Starting page](../assets/step-5a.png){:title="Starting page" class="img-responsive"}
+
 
 So now within our `<script>` tag we do the following ...
 
@@ -101,7 +102,8 @@ document.getElementById('nameCount').innerText = "There are " + names.length + "
 
 Now open the page up and try adding some names:
 
-[INSERT SCREENSHOT]
+![Some names](../assets/step-5b.png){:title="Some names" class="img-responsive"}
+
 
 Cool.
 
@@ -114,40 +116,41 @@ We could use conditions to fix these up.  Give it a try before going onto the ne
 
 Hints:
 
-1. `if (name === ‘’)`
+1. `if (name !== ‘’)`
 2. `if (names.length === 0)`
 
 One possible solution:
 
 ```javascript
-  <script>
-    var names=[];
+<script>
+  var names=[];
 
-    function handleAddName(){
-      var name = document.getElementById('newName').value;
-      if(name !== ''){
-        names.push(name);
-      }
-
-      var countMessage = '';
-      var namesListMessage = '';
-
-      if (names.length === 0){
-        countMessage = "There are no names.";
-      }
-      if (names.length === 1){
-        countMessage = "There is 1 name.";
-        namesListMessage = "The name is: " + names[0] + ".";
-      }
-      if (names.length > 1){
-        countMessage = "There are " + names.length + " names.";
-        namesListMessage = "The names are: " + names.join(', ') + ".";
-      }
-      document.getElementById('nameCount').innerText = countMessage;
-      document.getElementById('nameList').innerText = namesListMessage;
+  function handleAddName(){
+    var name = document.getElementById('newName').value;
+    if(name !== ''){
+      names.push(name);
     }
 
-    document.getElementById("buttonA").onclick = handleAddName;
+    var countMessage = '';
+    var namesListMessage = '';
 
-  </script>
+    if (names.length === 0){
+      countMessage = "There are no names.";
+    }
+    if (names.length === 1){
+      countMessage = "There is 1 name.";
+      namesListMessage = "The name is: " + names[0] + ".";
+    }
+    if (names.length > 1){
+      countMessage = "There are " + names.length + " names.";
+      namesListMessage = "The names are: " + names.join(', ') + ".";
+    }
+    document.getElementById('nameCount').innerText = countMessage;
+    document.getElementById('nameList').innerText = namesListMessage;
+  }
+
+  document.getElementById("buttonA").onclick = handleAddName;
+
+</script>
 ```
+{:class="solution"}

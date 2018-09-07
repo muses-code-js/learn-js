@@ -14,7 +14,7 @@ What if our app had to managed information about customers?  Or cats?
 
 This is where **objects** come in.
 
-Objects are variables that contain multiple variables.  Their purpose is to collect together multiple different values that each describe different aspects of the same thing.  These values are called the object’s properties. 
+Objects are variables that contain multiple variables.  Their purpose is to collect together multiple different values that each describe different aspects of the same thing.  These values are called the object’s properties.
 
 Let’s create another page like the previous one, but instead of just keeping a list of names we will have a list of objects and display them in different ways.
 
@@ -42,7 +42,7 @@ You can use the properties of an object just like any other variable:
 ```javascript
 cat.weight = cat.weight - 0.2;
 
-console.log(cat.name + “ really hates “ + cat.hates);
+console.log(cat.name + " really hates " + cat.hates);
 ```
 
 If you try to read a property that doesn’t it’s value is `undefined`.

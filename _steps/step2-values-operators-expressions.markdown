@@ -43,7 +43,8 @@ Safari doesn't have its Dev Tools enabled by default, you turn them on in Safari
 
 When you have your Dev Tools open, go to the Console tab.
 
-[SCREENSHOT]
+![Chrome Developer Tools](../assets/step-2a.png){:title="Chrome Developer Tools" class="img-responsive"}
+
 
 ## Arithmetic Operations
 
@@ -52,6 +53,8 @@ In the Javascript console, type the number `205` and press enter.
 You will see it display the number `205` again.  The javascript Console **evaluates** the expression you type in and displays the result.  When you just type a single value like this, it evaluates to itself.
 
 So lets try: `205 + 103`.
+
+![Operations in the Console](../assets/step-2b.png){:title="Operations in the Console" class="img-responsive"}
 
 You'll get `308` displayed.  This expression is an operation with the `+` operator AKA the addition operator.
 
@@ -70,17 +73,17 @@ Just like arithmetic, the good old **order of operations** applies, and you can 
 
 Experiment with different expressions in the console and see what you get.
 
-<div class="aside">
+### What's with `*` & `/`?
 Why `*` & `/` instead of proper multiply & divide symbols?
 
 The answer lies in the fact that the design of the earliest computer keyboards where derived from the design of mechanical typewriters.  
 
-Writers using typewriters didn't need a multiplication symbol because they could just use a lowercase `x` if they needed one,  and you could make a division sign by typing a `-` and then backspacing and typing a `:` over the top.  People also got into the habit of typing fractions as `1/2` and `3/4`.
+Writers using typewriters didn't need a multiplication symbol because they could just use a lowercase `x` if they needed one,  and you could make a division sign by typing a `-` and then backspacing and typing a `:` over the top.  (#lifehacks :wink:) People also got into the habit of typing fractions as `1/2` and `3/4`.
 
 Fancier typewriters came along with special division and multiplication keys but never quite caught on.
 
 So when we started using keyboards with computers we inherited that limitation and just worked around it by adopting the fractions convention for division and using the relatively unused `*` for multiplication.
-</div>
+
 
 ### Values & Types
 

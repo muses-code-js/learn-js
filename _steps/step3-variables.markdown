@@ -105,4 +105,7 @@ In our JavaScript we have a variable called `message`.
 `message` is what is displayed when we click on the `Say` button.
 Clicking on either of the other buttons will assign a different value to `message`.
 
+![Buttons](../assets/step-3a.png){:title="Buttons" class="img-responsive"}
+
+
 Before going on to the next step, have a try at adding another button `Stay` which changes the message to `"Well, make yourself comfortable."`

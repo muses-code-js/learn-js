@@ -65,7 +65,7 @@ function handleLeave(){
 
 Ok, refresh the page, type a name into the box, click `arrive` or `leave`.
 
-[SCREENSHOT]
+![With name input](../assets/step-4a.png){:title="With name input" class="img-responsive"}
 
 But wait, we have a subtle problem.
 What if you don't type in a name?

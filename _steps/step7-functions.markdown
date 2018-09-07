@@ -54,6 +54,8 @@ Create a new file with the following HTML.
 
 Save it and check it out in your browser.
 
+![Starting page](../assets/step-7a.png){:title="Starting page" class="img-responsive"}
+
 You should see three colour selection elements that when clicked open colour pickers.
 This is done by using `<input>` elements with `type` set to `color`.
 
@@ -114,12 +116,13 @@ Refresh the page, open the console and click on one of the colour inputs and try
 
 The console will display something like this:
 
-[INSERT SCREENSHOT]
+![Event in the console](../assets/step-7b.png){:title="Event in the console" class="img-responsive"}
+
 
 This is our event data.  You should be able to click the little triangle and expand it to see all the details.  
 
 The `event` object contains a lot of properties with details about the event, but the interesting thing for us is the `target` property.
-`target` is another object which represents the element which was the source of the event.  
+`target` is another object which represents the element which was the source of the event.
 It is from this that we can find out what the new colour selection is, and anything else we want to know.
 
 So lets do that, lets change that log statement to show instead just the details we are interested in.
@@ -178,6 +181,8 @@ So now if when you try to change the background colour, `setColor` only gets inv
 
 Try it out & check the log to see.
 
+![Undefined parameters in the console](../assets/step-7c.png){:title="Undefined parameters in the console" class="img-responsive"}
+
 If fewer arguments are passed than parameters are declared, then the remaining parameters contain the special value `undefined`, just like uninitialised variables.
 
 And we are going to take advantage of this in `setColor` because setting the page colour is going to be a little different to the div colours.
@@ -197,6 +202,8 @@ function setColor(color, elementId){
 So now if `elementId` is `undefined` it means update the background colour with the value of `color`.  Otherwise get the element with the passed id and set its background colour.
 
 Check it out in your browser.
+
+![Undefined parameters in the console](../assets/step-7d.png){:title="Undefined parameters in the console" class="img-responsive"}
 
 ## Return Values
 
@@ -227,7 +234,8 @@ console.log(getMessage(color, elementId));
 
 Save it and test it in the browser.  See how the return value from `getMessage` is “passed back” to `console.log`
 
-[INSERT SCREENSHOT]
+![getMessage displayed by console](../assets/step-7e.png){:title="getMessage displayed by console" class="img-responsive"}
+
 
 The returned value is substituted in the place of the function call just like a resolved expression.
 
@@ -239,7 +247,7 @@ document.getElementById('message').innerText = getMessage(color, elementId);
 
 Now when you change colours the appropriate message should be displayed.
 
-[INSERT SCREENSHOT]
+![Final](../assets/step-7f.png){:title="Final" class="img-responsive"}
 
 You could move that line to `handleColorChange` instead of it being in `setColor`, but you would have to make a few small changes.
 What do you think those changes would have to be?  Give it a try.
