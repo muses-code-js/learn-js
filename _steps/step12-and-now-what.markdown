@@ -3,7 +3,7 @@ layout: step
 number: 12
 title: And now what?
 permalink: step12/
-
+end: true
 ---
 
 Congratulations you made it!  You know know the basics of Javascript!
