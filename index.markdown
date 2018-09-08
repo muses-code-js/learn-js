@@ -8,7 +8,7 @@ We are going to assume the following about you:
  - you know some basic HTML/CSS and can make simple webpages
  - you know the basics of using a text editor like Atom, Visual Studio Code, Sublime Text etc.
 
-If you aren’t familiar with those things you should start with [Introduction to HTML](LINK) first.
+If you aren’t familiar with those things you should start with [Introduction to HTML](/learn-html) first.
 
 This workshop aims to teach you the basics of Javascript within the web-browser.  This is pretty easy to get started with, and builds up some core  knowledge useful both in the browser and in learning Node.JS or any other JavaScript environment.
 
