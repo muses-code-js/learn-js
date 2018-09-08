@@ -97,7 +97,8 @@ document.getElementById('displayBox').innerText = 'You clicked the button!';
 
 When we surround characters with quotes characters like this, it makes a type of value that is called a **string**.  A string is just a sequence of letters, numbers and other characters which is a literal representation of them.  Imagine a string as bunting with letters, like a sign at a party.
 
-[IMAGE PARTY SIGN BUNTING]
+![Bunting](../assets/bunting-string.jpg){:title="Bunting" class="img-responsive imgbox"}
+
 
 There are different kinds of values for different uses.  We refer to this as the **type** of the value.
 
