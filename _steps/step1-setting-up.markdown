@@ -49,7 +49,9 @@ Now click on the button and you will see the text 'You clicked the button!' adde
 
 ![Your very first Javascript](../assets/step-1a.png){:title="Your very first Javascript" class="img-responsive"}
 
-[INSERT BRAIN EXPLODING GIF]
+![Mind Blown](../assets/mind-blown.gif){:title="Mind Blown" class="img-responsive"}
+
+
 
 So what just happened here?
 
