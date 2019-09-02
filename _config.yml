@@ -9,9 +9,14 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: "Node Girls"
+title: "Muses Code"
 workshopname: "Learn Javascript"
+homepage: "https://musescode.js.org"
 email: your-email@domain.com
+facebook: ""
+twitter: ""
+github:  ""
+
 description: > # this means to ignore newlines until "baseurl:"
   This is an introductory workshop for Javascript
 baseurl: "/learn-js" # the subpath of your site, e.g. /blog

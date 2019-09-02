@@ -2,16 +2,20 @@
 layout: default
 ---
 <article class="post">
-
+  
   <header class="post-header">
-    <h2 class="post-title"> Step {{page.number}} - {{ page.title | escape }}</h1>
-  </header>
+    {% if page.status %}
+    <div id="watermark">{{ page.status }}</div> 
+    {% endif %}  
+    <h2 class="post-title"> Step {{page.number}} - {{ page.title | escape }}</h2>
+    </header>
 
   <div class="post-content">
     {{ content }}
     {% include page-nav.html %}
     {% include keywords-table.html %}
-
+    {% include reference.html %}
+    
   </div>
 
 </article>
