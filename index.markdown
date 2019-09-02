@@ -1,7 +1,9 @@
-![NodeGirls](assets/logo.png)
+<!-- ![Muses Code](assets/muses_logo.png) -->
+## Welcome
 
+Welcome to the __Muses Code__ Javascript Workshop. 
 
-Welcome to Javascript.
+We hope you have a really fun time learning Javascript! :smile:
 
 We are going to assume the following about you:
 

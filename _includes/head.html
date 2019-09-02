@@ -3,9 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}NodeGirls: {{ page.title | escape }}{% else %}NodeGirls {{ site.workshopname | escape }}{% endif %}</title>
+  <title>{% if page.title %}Muses Code: {{ page.title | escape }}{% else %}Muses Code {{ site.workshopname | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="{{ "/assets/favicon.ico" | relative_url }}" />
+  
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
