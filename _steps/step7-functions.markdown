@@ -229,7 +229,7 @@ When the function encounters the `return` keyword, the function stops running im
 Now let's invoke it from `setColor` and just log the result.  Add this line to the end of `setColor`:
 
 ```Javascript
-console.log(getMessage(color, elementId));
+console.log(getMessage(event.target.value, event.target.name));
 ```
 
 Save it and test it in the browser.  See how the return value from `getMessage` is “passed back” to `console.log`
